@@ -1,0 +1,1 @@
+// Reference models/hooks from activities, don't need email from user
