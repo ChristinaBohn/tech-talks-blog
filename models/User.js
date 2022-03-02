@@ -1,5 +1,3 @@
-// Reference models/hooks from activities, don't need email from user
-
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');

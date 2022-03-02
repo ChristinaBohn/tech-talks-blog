@@ -19,14 +19,17 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    date_created: {
+    date_posted: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
   },
   {
@@ -34,7 +37,7 @@ Post.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "post",
+    modelName: 'post',
   }
 );
 

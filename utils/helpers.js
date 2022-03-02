@@ -11,3 +11,5 @@ module.exports = {
       return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(date).getFullYear()}`;
     },
   }; 
+  // {{format_date date_posted}}
+  // Install momentJS to application and import to model and use moment.format() to change the dates format.

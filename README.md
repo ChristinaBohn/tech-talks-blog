@@ -1,4 +1,6 @@
-# tech-talks-blog
+# Tech Talks Blog
+
+## Description
 
 ## Technologies Used
 

@@ -22,6 +22,7 @@ GET - "/dashboard" - User Dashboard
 
 GET - "/dashboard/new" - Create Post View
 
+
 POST - "/api/posts" - Create Post API
 
 ------
