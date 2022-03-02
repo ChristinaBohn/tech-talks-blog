@@ -1,1 +1,1 @@
-// Login, signup, homepage view - all posts (not add/delete posts, comments)
+// Login, signup, homepage view - view all posts (not add/delete posts, comments)
