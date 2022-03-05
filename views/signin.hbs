@@ -1,0 +1,44 @@
+<div>
+  <h2 style="text-align:center; padding-bottom:30px;">Sign In</h2>
+
+  {{! Form Section }}
+
+  <form class="form login-form">
+
+    <!-- Username -->
+    <div class="form-group" style="margin-bottom:20px;">
+      <label for=" username-login" class="form-label-h6">Username</label>
+
+      <input
+        type="text"
+        id="username-login"
+        class="form-control"
+        aria-label="Username"
+      />
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password-login" class="form-label-h6">Password</label>
+      <input type="password" id="password-login" class="form-control" />
+    </div>
+
+    <!-- Login Button -->
+    <div class="form-group d-grid gap-2 mt-5">
+      <button
+        type="submit"
+        class="button-h6 login-button-registration"
+      >Login</button>
+    </div>
+
+  </form>
+
+  <!-- Registration Button -->
+  <a
+    href="/register"
+    class="d-grid button-h6 register-button-login"
+  >Sign Up</a>
+
+</div>
+
+<script src="./js/login.js"></script>
