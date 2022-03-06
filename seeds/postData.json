@@ -1,0 +1,23 @@
+[  
+    {
+        "id": 1,
+        "title": "Scope Vs. Context",
+        "post": "lorem ipsum",
+        "date_posted": "03/01/22 *** FORMAT ME ***",
+        "user_id": 1
+    },
+    {
+        "id": 2,
+        "title": "Arrow Functions",
+        "post": "lorem ipsum",
+        "date_posted": "03/04/22",
+        "user_id": 2
+    },
+    {
+        "id": 3,
+        "title": "Spread Operators",
+        "post": "lorem ipsum",
+        "date_posted": "03/05/22",
+        "user_id": 3
+    }
+]

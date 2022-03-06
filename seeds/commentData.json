@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "comment": "My Favorite Line",
+        "date_commented": "FORMAT DATE",
+        "user_id": 1,
+        "post_id": 1
+    }
+]
