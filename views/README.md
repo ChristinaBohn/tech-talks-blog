@@ -1,16 +1,16 @@
 # VIEWS
 
-GET - "/" - Home
+GET - "/" - Home ** (homeRoutes.js)
 
 ------
 
-GET - "/login" - Login Form
+GET - "/login" - Login Form ** (homeRoutes.js)
 
 POST - "/api/users/login" - Authenticate existing user
 
 ------
 
-GET - "/signup" - Registration form
+GET - "/signup" - Registration form ** (homeRoutes.js)
 
 POST - "/api/users" - Create user
 
@@ -35,6 +35,6 @@ DELETE - "/api/posts/:postId" - Delete Post API
 
 ------
 
-GET - "/post/:postId" - View a single post
+GET - "/post/:postId" - View a single post ** (homeRoutes.js)
 
 POST - "/api/comments" - Create a comment for a post
