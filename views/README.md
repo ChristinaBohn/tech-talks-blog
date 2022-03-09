@@ -23,15 +23,15 @@ GET - "/dashboard" - User Dashboard
 GET - "/dashboard/new" - Create Post View
 
 
-POST - "/api/posts" - Create Post API
+POST - "/api/posts" - Create Post API ** (postRoutes.js)
 
 ------
 
 GET - "/dashboard/edit/:postId" - Edit Post View
 
-PUT - "/api/posts/:postId" - Edit Post API
+PUT - "/api/posts/:postId" - Edit Post API ** (postRoutes.js)
 
-DELETE - "/api/posts/:postId" - Delete Post API
+DELETE - "/api/posts/:postId" - Delete Post API ** (postRoutes.js)
 
 ------
 

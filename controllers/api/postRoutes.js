@@ -1,8 +1,8 @@
-// Add, edit, delete posts
-
 const router = require('express').Router();
 const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
+
+// Need to GET all, if already in homeRoutes?
 
 // Create a Post
 router.post('/', withAuth, async (req, res) => {
@@ -39,13 +39,13 @@ router.delete('/:id', withAuth, async (req, res) => {
     }
   });
 
-// EDIT a Post
+// UPDATE a Post
 router.put('/:id', withAuth, async (req, res) => {
     try {
       const postData = await Post.update( 
         {
           title: req.body.title,
-          content: req.body.content
+          post: req.body.post
         }, 
         {
         where: {
