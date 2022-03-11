@@ -1,7 +1,43 @@
-// Use with auth
+const router = require('express').Router();
+const { User, Post, Comment } = require('../models');
+const withAuth = require('../utils/auth');
 
-// Dashboard (logged in), 
+// Dashboard View - logged in 
+router.get('/', async (req, res) => {
+    const postData = await Post.findAll();
+    const posts = postData.map((post) => post.get({ plain: true }));
+  
+    res.render('dashboard', {
+      layout: 'dashboard',
+      posts,
+      logged_in: req.session.logged_in
+    });
+});
 
-// Edit post (title: input fields, body: text area, filled in with previous data), with delete option
+// Edit Post View (title: input fields, body: text area, filled in with previous data), with delete option
+router.get('/edit/:id', async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id);
+        const posts = postData.get({ plain : true});
 
-// Create post
+        res.render('editpost', {
+        layout: 'dashboard',
+        ...posts,
+        logged_in: req.session.logged_in
+        });
+
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
+
+// Create Post View
+router.get('/newpost', withAuth, (req, res) => {
+
+    res.render('newpost', {
+      layout: 'dashboard',
+      logged_in: req.session.logged_in,
+    });
+});
+
+module.exports = router;

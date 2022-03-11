@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// Need to GET all?
 
 // CREATE a Comment
 router.post('/', withAuth, async (req, res) => {

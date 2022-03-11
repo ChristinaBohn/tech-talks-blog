@@ -2,9 +2,8 @@ const router = require('express').Router();
 const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// Need to GET all, if already in homeRoutes?
 
-// Create a Post
+// CREATE a Post
 router.post('/', withAuth, async (req, res) => {
     try {
       const newPost = await Post.create({
@@ -23,8 +22,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     try {
       const postData = await Post.destroy({
         where: {
-          id: req.params.id,
-        //   Include user_id?
+          id: req.params.id
         },
       });
   
@@ -49,8 +47,7 @@ router.put('/:id', withAuth, async (req, res) => {
         }, 
         {
         where: {
-          id: req.params.id,
-        //   user_id: req.session.user_id, --needed?
+          id: req.params.id
         },
       });
   
